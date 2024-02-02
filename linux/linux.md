@@ -10,6 +10,7 @@ lsb_release -a
 
 - [[grep]]
 - [[less]]
+- [[df]]
 
 ## Categories
 

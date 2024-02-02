@@ -1,4 +1,4 @@
-# Groups
+# groupadd
 
 Create a group:
 

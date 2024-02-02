@@ -1,7 +1,9 @@
 # Jobs
 
-Create a job:
+Create a job
 
 ```bash
 php artisan make:job ProcessPodcast
 ```
+
+Jobs tie in very well with [[supervisor]].

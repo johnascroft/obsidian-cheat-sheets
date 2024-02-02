@@ -1,4 +1,4 @@
-# Less
+# less
 
 Output information from a file:
 

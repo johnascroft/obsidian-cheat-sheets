@@ -1,6 +1,6 @@
 # Git
 
-## Commands
+## Common commands
 
 - [[merge]]
 - [[rebase]]
