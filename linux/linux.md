@@ -16,6 +16,7 @@ lsb_release -a
 
 - [[mount]]
 - [[users]]
+- [[samba]]
 
 ## Web servers
 

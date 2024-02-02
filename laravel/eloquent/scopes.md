@@ -6,7 +6,7 @@ There are better ways of doing this in terms of indexing and optimisation of the
 
 ```php
 $users = User::query()  
-    ->search(request('search'))  
+    ->search($request->search))  
     ->with('company')  
     ->paginate();  
 ```
@@ -31,7 +31,7 @@ public function scopeSearch(Builder $query, string $terms = null)
 
 ## Running authorisation policies in the database
 
-Really useful for when you have loads of records and it doesn’t make sense to filter stuff out using [[php]]. You can pass the user model into a scope and do you filtering directly in the database.
+Really useful for when you have loads of records and it doesn’t make sense to filter stuff out using [PHP](php). You can pass the user model into a scope and do you filtering directly in the database.
 
 ```php
 use Illuminate\Database\Eloquent\Builder;
