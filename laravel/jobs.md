@@ -6,4 +6,4 @@ Create a job
 php artisan make:job ProcessPodcast
 ```
 
-Jobs tie in very well with [[supervisor]].
+Jobs tie in very well with [Supervisor](supervisor).

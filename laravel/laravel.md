@@ -10,5 +10,5 @@
 ## Features
 
 - [[Eloquent]]
-- [[factories]]
-- [[queues]] (including [[supervisor]])
+- [Factories](factories)
+- [Queues](queues) (including [Supervisor](supervisor))

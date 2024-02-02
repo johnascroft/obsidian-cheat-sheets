@@ -11,6 +11,7 @@ lsb_release -a
 - [[grep]]
 - [[less]]
 - [[df]]
+- [[tail]]
 
 ## Categories
 
@@ -21,4 +22,3 @@ lsb_release -a
 ## Web servers
 
 - [Apache](apache)
-- [[nginx]]

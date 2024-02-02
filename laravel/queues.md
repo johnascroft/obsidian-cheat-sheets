@@ -1,10 +1,10 @@
 # Queues
 
-## Supervisor ([[supervisor]])
+## Supervisor
 
 In production, you need a way to keep your `queue:work` processes running. A `queue:work` process may stop running for a variety of reasons, such as an exceeded worker timeout or the execution of the `queue:restart` command.
 
-For this reason, you might reach for [[supervisor]].
+For this reason, you might reach for [Supervisor](supervisor).
 ## Failed jobs
 
 If you want to start tracking failed jobs, you can use the following artisan command:
@@ -15,7 +15,7 @@ php artisan queue:failed-table
 php artisan migrate
 ```
 
-Show your failed jobs:
+Show your failed jobs using the command line:
 
 ```bash
 php artisan queue:failed
