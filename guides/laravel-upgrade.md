@@ -15,8 +15,8 @@ use App\Http\Controllers\UserController;
 Route::get('/user', [UserController::class, 'index']);
 ```
 
-Replace Laravel Mix with [Vite](vite)
+Replace Laravel Mix with [Vite](vite).
 
-Include Inertia from [[npm]]
+Include [Inertia](https://inertiajs.com/) from [[npm]].
 
 Replace blade files with singular file and Vue components

@@ -1,5 +1,7 @@
 # Raw indexes
 
+In this example, we want to order by people's birthday, using the format `month-date`.
+
 This will order as you want it to, but the column won't be indexed:
 
 ```php
