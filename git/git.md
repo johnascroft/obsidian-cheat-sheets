@@ -6,6 +6,20 @@
 - [[rebase]]
 - [[remote]]
 
+## Rename locally and remotely
+
+```bash
+# Locally rename the branch
+git checkout old-branch
+git branch -m new-branch
+
+# Push changes to remote
+git push -u origin new-branch
+
+# Delete old remote branch
+git push origin --delete old-branch
+```
+
 ## Move commits to another branch
 
 Say if you’ve committed on the `main` branch and meant for it to be on another side branch, you can do the following. It will branch off from where you left off (but not checkout the branch), then you roll-back master, then move to the new branch.
