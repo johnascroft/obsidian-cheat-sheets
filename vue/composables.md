@@ -11,7 +11,7 @@ const isVisible = ref(false);
 
 // Computed
 const reversedMessage = computed(() => {
-	return message.value.split('').reverse().join('');
+    return message.value.split('').reverse().join('');
 });
 
 // Methods				
@@ -33,22 +33,22 @@ The `useMessage.js` composable would look like this:
 import { ref, computed, watch, toRef } from 'vue';
 
 export function useMessage(text) {
-	const originalMessage = toRef(text);
-	const isReversed = ref(false);
-	function toggleReverse() {
-		isReversed.value = !isReversed.value;
-	}
-	const message = computed(() => {
-		if (isReversed.value) {
-			return reversedMessage.value;
-		}
-		return originalMessage.value;
-	});
-	
-	return {
-		toggleReverse,
-		message
-	}
+    const originalMessage = toRef(text);
+    const isReversed = ref(false);
+    function toggleReverse() {
+        isReversed.value = !isReversed.value;
+    }
+    const message = computed(() => {
+        if (isReversed.value) {
+            return reversedMessage.value;
+        }
+        return originalMessage.value;
+    });
+    
+    return {
+        toggleReverse,
+        message
+    }
 }
 ```
 
@@ -62,16 +62,16 @@ https://gist.github.com/yyx990803/8854f8f6a97631576c14b63c8acd8f2e
 const { showHiddenFolders } = useHiddenFolders()
 
 function useHiddenFolders () {
-  const showHiddenFolders = ref(localStorage.getItem(SHOW_HIDDEN) === 'true')
-  watch(showHiddenFolders, value => {
-    if (value) {
-      localStorage.setItem(SHOW_HIDDEN, 'true')
-    } else {
-      localStorage.removeItem(SHOW_HIDDEN)
+    const showHiddenFolders = ref(localStorage.getItem(SHOW_HIDDEN) === 'true')
+    watch(showHiddenFolders, value => {
+        if (value) {
+            localStorage.setItem(SHOW_HIDDEN, 'true')
+        } else {
+            localStorage.removeItem(SHOW_HIDDEN)
+        }
+    }, { lazy: true })
+    return {
+        showHiddenFolders
     }
-  }, { lazy: true })
-  return {
-    showHiddenFolders
-  }
 }
 ```
