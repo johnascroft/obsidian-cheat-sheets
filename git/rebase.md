@@ -80,3 +80,11 @@ squash f61d5e0 Combination of loads of commits
 
 > [!warning]
 > After an interactive rebase, your **commit hashes will change**. When you come to push your changes, you will need to force push.
+
+## Fixing forced pushes on remote
+
+This shouldn't happen, but if someone has force-pushed to main and you need to get everyone else's branch up to date and in sync again you can use the following command:
+
+```bash
+git reset --hard origin main
+```

@@ -1,24 +1,14 @@
 # Git
 
+## Topics
+
+- [branches](branches)
+- [tags](tags.md)
 ## Common commands
 
 - [[merge]]
 - [[rebase]]
 - [[remote]]
-
-## Rename locally and remotely
-
-```bash
-# Locally rename the branch
-git checkout old-branch
-git branch -m new-branch
-
-# Push changes to remote
-git push -u origin new-branch
-
-# Delete old remote branch
-git push origin --delete old-branch
-```
 
 ## Move commits to another branch
 
@@ -30,14 +20,3 @@ git reset --hard HEAD~3 # You can also use the commit hash in place of HEAD~3
 git checkout new-branch
 ```
 
-## Delete local branch
-
-```bash
-git branch -d branch-name
-```
-
-## Delete remote branches
-
-```bash
-git push origin --delete branch-name
-```
